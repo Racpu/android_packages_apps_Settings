@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RacyanOS and Team Nuclear -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- About RaCyanOS -->
+    <string name="about_racyanos_settings_title">About RacyanOS</string>
+    <string name="share_racyanos">All about RaCyanOS</string>
+    <string name="racyanos_donate">Do you like my work?</string>
+    <string name="racyanos_donate_summary">Make a donation</string>
+    <string name="github_racyanos">https://github.com/Racpu</string>
+    <string name="racyanos_links">Links</string>
+    <string name="ns_kernel_title">Kernel Website</string>
+    <string name="ns_kernel_summary">More information about kernel</string>
+    <string name="xda_forum_title">XDA Thread</string>
+    <string name="xda_forum_summary">View XDA Thread </string>
+    <string name="racyanos_source_title">GitHub</string>
+    <string name="racyanos_source_summary">RaCyanOS Sources</string>
+    <string name="sourcebase_title">Source Base</string>
+    <string name="thanks">Thanks</string>
+    <string name="nuclear_team">Thanks to NuclearTeam Members</string>
+    <string name="thanks_all">Thanks all for the help</string>
+    <string name="thanks_wife">Thanks to my wife for the time away</string>
+    <string name="cm_sourcebase">CyanogenMod</string>
+    <string name="cm_sourcebase_sumary">https://github.com/CyanogenMod</string>
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- About RaCyanOS and TeamNuclear, sources...forums...etc...-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:title="@string/about_racyanos_settings_title" >
+
+    <!-- Share NS ROM -->
+         <Preference
+             android:key="share"
+             android:title="@string/share_racyanos" />
+                
+ 	<PreferenceCategory
+		android:key="links"
+		android:title="@string/racyanos_links"> 
+
+        <!-- Xda Link -->     
+		<Preference
+			android:key="racyanos_forum"
+			android:title="@string/xda_forum_title"
+			android:summary="@string/xda_forum_summary" />
+		<!-- kernel Page -->	
+		<Preference
+			android:key="racyanos_kernel"
+			android:title="@string/ns_kernel_title"
+			android:summary="@string/ns_kernel_summary" />
+        <!-- Sources github -->
+		<Preference
+			android:key="racyanos_source"
+			android:title="@string/racyanos_source_title"
+			android:summary="@string/racyanos_source_summary" />
+		<!-- Donation -->	
+		<Preference
+			android:key="racyanos_donate"
+			android:title="@string/racyanos_donate"
+			android:summary="@string/racyanos_donate_summary" />
+                			
+     </PreferenceCategory>
+
+     <PreferenceCategory
+        android:key="sourcebase"
+        android:title="@string/sourcebase_title">
+                
+        <Preference
+            android:key="racyanos_sourcebase"
+            android:title="@string/cm_sourcebase"
+            android:summary="@string/cm_sourcebase_sumary" />
+
+    </PreferenceCategory>
+		<!-- Thanks -->		
+	<PreferenceCategory
+        android:key="thanksrom"
+        android:title="@string/thanks"> 
+        
+        <PreferenceScreen android:key="nuclearteam"
+        android:title="@string/nuclear_team" />         
+        <PreferenceScreen android:key="thanksall"
+        android:title="@string/thanks_all" />
+        <PreferenceScreen android:key="thankswife"
+        android:title="@string/thanks_wife" />
+    </PreferenceCategory>
+            
+</PreferenceScreen>
+
