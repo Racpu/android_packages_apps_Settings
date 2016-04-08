@@ -18,13 +18,13 @@
 
     <PreferenceCategory
         android:title="@string/racyanos_cat_title">
-        
-<!-- Barra de Estado -->
+                        
+<!-- Status bar -->
         <PreferenceScreen
                 android:id="@+id/status_bar_settings"
                 android:title="@string/status_bar_title"
                 android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
-                android:icon="@drawable/racyanos_statusbar_icon"
+                android:icon="@drawable/ic_settings_statusbar"
                 />
 
 <!-- Multitarefa -->
@@ -35,12 +35,12 @@
             android:icon="@drawable/racyanos_recents_icon" />
 
 <!-- Botões -->
-       <PreferenceScreen
+        <PreferenceScreen
                 android:id="@+id/button_settings"
                 android:title="@string/button_pref_title"
                 android:fragment="com.android.settings.ButtonSettings"
-                android:icon="@drawable/racyan_buttons_icon"
-		/>
+                android:icon="@drawable/ic_settings_buttons"
+                />
 
 <!-- Ecrã de bloqueio -->
        <PreferenceScreen
@@ -49,6 +49,15 @@
             android:fragment="com.android.settings.racyanos.LockScreenSettings"  
             android:icon="@drawable/racyanos_lock_icon"
             />
+          
+<!-- Lock screen -->
+        <PreferenceScreen
+                android:id="@+id/lockscreen_settings"
+                android:title="@string/lockscreen_settings"
+                android:fragment="com.android.settings.SecuritySettings"
+                android:icon="@drawable/ic_settings_lockscreen">
+                <extra android:name="filter_type" android:value="0" />
+        		/>
 
 <!-- RaCyanOS Tweaks -->
         <PreferenceScreen
