@@ -18,92 +18,65 @@
 
     <PreferenceCategory
         android:title="@string/racyanos_cat_title">
-                        
-<!-- Status bar -->
-        <PreferenceScreen
-                android:id="@+id/status_bar_settings"
-                android:title="@string/status_bar_title"
-                android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
-                android:icon="@drawable/ic_settings_statusbar"
-                />
 
-<!-- Multitarefa -->
-       <PreferenceScreen
+    <!-- Barra de Estado -->
+        <PreferenceScreen
+            android:id="@+id/status_bar_settings"
+            android:title="@string/status_bar_title"
+            android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
+            android:icon="@drawable/ic_check_circle_24dp"
+            />
+    <!-- Multitarefa -->
+        <PreferenceScreen
             android:id="@+id/recents_settings"
             android:fragment="com.android.settings.racyanos.RecentsSettings"
             android:title="@string/recents_settings_title"
-            android:icon="@drawable/racyanos_recents_icon" />
-
-<!-- Botões -->
+            android:icon="@drawable/ic_check_circle_24dp" />
+    <!-- Botões -->
         <PreferenceScreen
-                android:id="@+id/button_settings"
-                android:title="@string/button_pref_title"
-                android:fragment="com.android.settings.ButtonSettings"
-                android:icon="@drawable/ic_settings_buttons"
-                />
-
-<!-- Ecrã de bloqueio -->
-       <PreferenceScreen
-	    android:title="@string/racyanos_lockscreen_title"	
+            android:id="@+id/button_settings"
+            android:title="@string/button_pref_title"
+            android:fragment="com.android.settings.ButtonSettings"
+            android:icon="@drawable/ic_check_circle_24dp"
+        />
+    <!-- Ecrã de bloqueio -->
+        <PreferenceScreen
+            android:title="@string/racyanos_lockscreen_title"
             android:key="lock_screen_general_category"
-            android:fragment="com.android.settings.racyanos.LockScreenSettings"  
-            android:icon="@drawable/racyanos_lock_icon"
-            />
-          
-<!-- Lock screen -->
-        <PreferenceScreen
-                android:id="@+id/lockscreen_settings"
-                android:title="@string/lockscreen_settings"
-                android:fragment="com.android.settings.SecuritySettings"
-                android:icon="@drawable/ic_settings_lockscreen">
-                <extra android:name="filter_type" android:value="0" />
-        		/>
+            android:fragment="com.android.settings.racyanos.LockScreenSettings"
+            android:icon="@drawable/ic_check_circle_24dp"
+        />
+    <!-- RaCyanOS Tweaks -->
+    <PreferenceScreen
+        android:key="misc"
+        android:fragment="com.android.settings.racyanos.TweaksSettings"
+        android:title="@string/racyanos_tweaks_title"
+        android:icon="@drawable/ic_check_circle_24dp"
+        />
 
-<!-- RaCyanOS Tweaks -->
-        <PreferenceScreen
-            android:key="misc"
-            android:fragment="com.android.settings.racyanos.TweaksSettings"
-            android:title="@string/racyanos_tweaks_title"
-            android:icon="@drawable/racyanos_tweaks_icon" 
-            />
+    <PreferenceScreen
+        android:id="@+id/kernel_adiutor"
+        android:title="@string/kernel_aduitor"
+        android:icon="@drawable/ic_check_circle_24dp">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.grarak.kerneladiutor"
+            android:targetClass="com.grarak.kerneladiutor.MainActivity" />
+        </PreferenceScreen>
 
-<!-- Perfomance (KernelAuditor) -->
-    <dashboard-tile
-		android:id="@+id/kernel_adiutor"
-                android:title="@string/kernel_aduitor"
-		android:icon="@drawable/racyanos_performance_icon">
- 	<intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.grarak.kerneladiutor"
-                    android:targetClass="com.grarak.kerneladiutor.MainActivity" />
-	</dashboard-tile>
-
-<!-- Atualização) -->
-    <PreferenceScreen android:key="system_update_settings"
-            android:title="@string/system_update_settings_list_item_title"
-            android:summary="@string/system_update_settings_list_item_summary">
-        <intent android:action="android.intent.action.MAIN">
-            <categories android:name="android.settings.SYSTEM_UPDATE_SETTINGS" />
-            <categories android:name="com.android.settings.SHORTCUT" />
-        </intent>
-    </PreferenceScreen>
-
-    <PreferenceScreen android:key="additional_system_update_settings"
-                      android:title="@string/additional_system_update_settings_list_item_title">
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="@string/additional_system_update"
-                android:targetClass="@string/additional_system_update_menu" />
-    </PreferenceScreen>
-
-    <!-- CyanogenMod Updates -->
-    <PreferenceScreen android:key="cm_updates"
-            android:title="@string/cmupdate_settings_title"
-            android:summary="@string/system_update_settings_list_item_summary">
-        <intent android:action="android.intent.action.MAIN"
+        <!-- CyanogenMod Updates -->
+        <PreferenceScreen 
+		android:key="cm_updates"
+            	android:title="@string/cmupdate_settings_title"
+		android:icon="@drawable/ic_check_circle_24dp">
+            <intent 
+		android:action="android.intent.action.MAIN"
                 android:targetPackage="com.cyanogenmod.updater"
                 android:targetClass="com.cyanogenmod.updater.UpdatesSettings" />
-    </PreferenceScreen> 
-               
+     </PreferenceScreen>   
+
+
+                
 </PreferenceCategory>
 
 </PreferenceScreen>
