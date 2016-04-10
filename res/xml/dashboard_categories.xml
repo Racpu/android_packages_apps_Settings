@@ -102,7 +102,7 @@
                 android:id="@+id/main_settings"
                 android:title="@string/racyanos_settings_title"
                 android:fragment="com.android.settings.racyanos.MainSettings"
-                android:icon="@drawable/ic_racyanos_tools_tint"
+                android:icon="@drawable/ic_racyanos_tools"
                 />        
                 
     <!-- Themes -->
