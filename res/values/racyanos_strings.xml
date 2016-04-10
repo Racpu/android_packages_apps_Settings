@@ -25,8 +25,9 @@
     
     <!-- RaCyanOS Main Settings -->
 	<string name="racyanos_cat_title">RaCyanOS Categories</string>
-	<string name="racyanos_settings_title">RaCyanOS Mod's</string>
+	<string name="racyanos_settings_title">RaCyanOS Mods</string>
     <string name="recents_settings_title">Recents</string>
+	<string name="button_pref_title">Buttons</string>
     <string name="racyanos_lockscreen_title">Lock Screen</string>
 	<string name="racyanos_tweaks_title">RaCyan Tweaks</string>
 	<string name="kernel_aduitor">Performance</string>
