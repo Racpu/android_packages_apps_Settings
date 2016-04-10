@@ -2403,7 +2403,7 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.nfc.PaymentSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/lockscreen_settings" />
+                android:resource="@id/security_settings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
@@ -2799,7 +2799,7 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="com.android.settings.SecuritySettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                       android:resource="@id/lockscreen_settings" />
+                       android:resource="@id/security_settings" />
         </activity>
 
         <activity android:name=".Settings$LiveLockScreenSettingsActivity"
