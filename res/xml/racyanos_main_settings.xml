@@ -44,8 +44,7 @@
 			android:id="@+id/lockscreen_settings"
 			android:title="@string/lockscreen_settings"
 			android:fragment="com.android.settings.SecuritySettings"
-			android:icon="@drawable/racyanos_lockscreen"
-			<extra android:name="filter_type" android:value="0" />        
+			android:icon="@drawable/racyanos_lockscreen" />     
                 
         <!-- RaCyanOS Tweaks -->
         <PreferenceScreen
