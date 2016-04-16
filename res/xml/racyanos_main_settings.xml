@@ -41,11 +41,12 @@
             />
         <!-- Ecrã de bloqueio -->
         <PreferenceScreen
-            android:title="@string/racyanos_lockscreen_title"
-            android:key="lock_screen_general_category"
-            android:fragment="com.android.settings.racyanos.LockScreenSettings"
-            android:icon="@drawable/racyanos_lockscreen"
-            />
+			android:id="@+id/lockscreen_settings"
+			android:title="@string/lockscreen_settings"
+			android:fragment="com.android.settings.SecuritySettings"
+			android:icon="@drawable/racyanos_lockscreen"
+			<extra android:name="filter_type" android:value="0" />        
+                
         <!-- RaCyanOS Tweaks -->
         <PreferenceScreen
             android:key="misc"
