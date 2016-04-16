@@ -17,9 +17,9 @@
     android:gravity="center">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_racyanos_logotype"
-            android:layout_marginTop="24dp"
+            android:layout_width="336dp"
+            android:layout_height="116dp"
+            android:src="@drawable/racyanos_logo"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="24dp"/>
 </LinearLayout>
